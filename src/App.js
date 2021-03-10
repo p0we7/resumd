@@ -18,6 +18,8 @@ import tuiCssForEditor from "./customization/tuiCssForEditor";
 import tuiCssForPdf from "./customization/tuiCssForPdf";
 import timqianCssForPdf from "./customization/timqianCssForPdf";
 import timqianCssForEditor from "./customization/timqianCssForEditor";
+import bearCssForPdf from "./customization/bearCssForPdf";
+import bearCssForEditor from "./customization/bearCssForEditor";
 
 const themes = {
   tui: {
@@ -34,7 +36,12 @@ const themes = {
     name: 'timqian',
     pdfCss: timqianCssForPdf,
     editorCss: timqianCssForEditor,
-  }
+  },
+  bear: {
+    name: 'bear',
+    pdfCss: bearCssForPdf,
+    editorCss: bearCssForEditor,
+  },
 }
 
 function App() {
@@ -119,6 +126,7 @@ function App() {
               <a href onClick={() => updateTheme(themes.tui.name)}>TUI</a>
               <a href onClick={() => updateTheme(themes.timqian.name)}>timqian.com</a>
               <a href onClick={() => updateTheme(themes.github.name)}>GitHub</a>
+              <a href onClick={() => updateTheme(themes.bear.name)}>bear</a>
               <hr/>
               <a href="https://github.com/timqian/resumd/issues/1"><i><small>Customize</small></i></a>
             </div>
