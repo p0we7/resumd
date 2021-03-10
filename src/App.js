@@ -52,7 +52,7 @@ function App() {
   let initMdContent = initContent;
   if (localMd) initMdContent = localMd;
   if (queryMdEncoded) initMdContent = decodeURIComponent(queryMdEncoded);
-  const [theme, setTheme] = useState(themes.tui.name);
+  const [theme, setTheme] = useState(themes.bear.name);
 
   // only run on first render.
   useEffect(() => {
